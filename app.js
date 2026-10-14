@@ -26,7 +26,10 @@
   }
   function setView(view){
     state.view=view;
-    ['map','library','compare'].forEach(v=>$('#'+v+'-view').hidden=v!==view);
+    document.querySelector('.work-head').hidden=view==='training';
+    $('#author-summary').hidden=view==='training';
+    if(location.hash!=='#'+view)history.replaceState(null,'','#'+view);
+    ['map','library','compare','training'].forEach(v=>$('#'+v+'-view').hidden=v!==view);
     document.querySelectorAll('[data-view]').forEach(b=>{if(b.hasAttribute('data-jump'))return;b.classList.toggle('active',b.dataset.view===view);b.setAttribute('aria-pressed',String(b.dataset.view===view));});
     renderAuthors();
     if(view==='library')renderLibrary();
@@ -92,7 +95,7 @@
     showDialog();
   }
   function openScope(){
-    $('#reader-body').innerHTML=`<p class="eyebrow">ABOUT THIS STUDY</p><h2>一份可以追溯的瞄准笔记</h2><p class="lead">先准确理解作者，再把观点带回自己的练习。</p><p>本站是独立研究整理，非作者官方页面。思维导图的主题划分和观点对照由整理者归纳，均非作者逐字原话。点击观点可回到相应原视频及时间位置。</p><table class="scope-table"><thead><tr><th>作者</th><th>已读字幕 / 转写</th><th>本次目录</th></tr></thead><tbody>${data.authors.map(a=>`<tr><td><a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.handle)} ↗</a></td><td>${a.read} 条</td><td>${a.catalog} 条</td></tr>`).join('')}</tbody></table>${data.authors.map(a=>`<h3>${esc(a.name)}</h3><p>${esc(a.scope)}</p>`).join('')}<h3>怎样理解“已读”</h3><p>已通读完整可用字幕或转录文本，并据此整理；不等于逐帧观看视频，也不保证自动字幕没有识别错误。克礼无明的 57 条资料中有 2 条使用本地语音转写，其余使用站内字幕。只列入目录的内容不计入已读数量。</p><p>演示性的动作、医学解释和哲学阐释有各自的证据限制；没有把经验性的效果数字整理成普遍承诺。对于前后发生变化的讲法，优先保留较新课程的明确限定。</p><h3>使用方法</h3><p>思维导图看体系，资料库搜索问题，观点对照查看同一主题。收藏保存在当前浏览器，清理浏览器数据后会丢失；不会发送到服务器。</p><p>整理更新：${esc(data.updated)}</p>`;
+    $('#reader-body').innerHTML=`<p class="eyebrow">ABOUT THIS STUDY</p><h2>一份可以追溯的瞄准笔记</h2><p class="lead">先准确理解作者，再把观点带回自己的练习。</p><p>本站是独立研究整理，非作者官方页面。思维导图的主题划分和观点对照由整理者归纳，均非作者逐字原话。点击观点可回到相应原视频及时间位置。</p><table class="scope-table"><thead><tr><th>作者</th><th>已读字幕 / 转写</th><th>本次目录</th></tr></thead><tbody>${data.authors.map(a=>`<tr><td><a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.handle)} ↗</a></td><td>${a.read} 条</td><td>${a.catalog} 条</td></tr>`).join('')}</tbody></table>${data.authors.map(a=>`<h3>${esc(a.name)}</h3><p>${esc(a.scope)}</p>`).join('')}<h3>怎样理解“已读”</h3><p>已通读完整可用字幕或转录文本，并据此整理；不等于逐帧观看视频，也不保证自动字幕没有识别错误。克礼无明的 58 条资料中有 2 条使用本地语音转写，其余使用站内字幕。只列入目录的内容不计入已读数量。</p><p>演示性的动作、医学解释和哲学阐释有各自的证据限制；没有把经验性的效果数字整理成普遍承诺。对于前后发生变化的讲法，优先保留较新课程的明确限定。</p><h3>使用方法</h3><p>思维导图看体系，资料库搜索问题，观点对照查看同一主题。收藏保存在当前浏览器，清理浏览器数据后会丢失；不会发送到服务器。</p><p>整理更新：${esc(data.updated)}</p>`;
     showDialog();
   }
   document.addEventListener('click',e=>{
@@ -118,5 +121,7 @@
   $('#reader').addEventListener('click',e=>{if(e.target===$('#reader')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();}});
   document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!$('#reader').open){e.preventDefault();setView('library');$('#search').focus();}});
   let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if(state.view==='map')fitMap();},120);});
-  renderAuthors();setView('map');
+  const initialView=['map','library','compare','training'].includes(location.hash.slice(1))?location.hash.slice(1):null;
+  renderAuthors();setView(initialView||'map');
+  if(initialView)window.addEventListener('load',()=>$('#study').scrollIntoView({block:'start',behavior:'instant'}),{once:true});
 })();

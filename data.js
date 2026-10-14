@@ -1,4 +1,4 @@
-window.AIM_DATA={
+window.AIM_DATA = {
   "updated": "2026-10-14",
   "authors": [
     {
@@ -10,10 +10,10 @@ window.AIM_DATA={
       "eyebrow": "观察 · 控制 · 迁移",
       "intro": "让判断与动作相互配合，在可控的边界上进步。",
       "description": "从持续判断、动作协调，到训练如何回到实战。九个主题串起这套瞄准理念。",
-      "read": 57,
+      "read": 58,
       "catalog": 447,
-      "minutes": 339,
-      "scope": "已读 57 条字幕或转写；并非完整观看全部 447 条视频。画面演示及医学判断另有阅读限制。",
+      "minutes": 384,
+      "scope": "已读 58 条字幕或转写（56 条站内字幕、2 条本地转写）；本轮补读 45 分 25 秒的 CS 学员案例。并非完整观看全部 447 条视频。画面演示及医学判断另有阅读限制。",
       "color": "orange"
     },
     {
@@ -25,10 +25,10 @@ window.AIM_DATA={
       "eyebrow": "注意力 · 反馈 · 学习",
       "intro": "让注意力服务任务，让判断贯穿动作。",
       "description": "从分解步骤，到持续判断。九个主题呈现琪露诺的教学与后期补充。",
-      "read": 14,
+      "read": 20,
       "catalog": 63,
-      "minutes": 111,
-      "scope": "读取的是完整可用字幕，未逐字听校、未逐帧观看。 AI字幕包含错别字、游戏名误识和片尾歌词；已核对主题，歌词不作为理念证据。 videos接口当日返回38条；所查两个合集另外保留旧教学入口。目录并非其全部历史作品。 这不是全部视频总结，未读视频不会被写成已读。 姿势、轨迹和教学示范仍需视觉复核。 量化效率、游戏转化率、医学及神经科学表述未独立验证。",
+      "minutes": 148,
+      "scope": "已通读 20 条教学的完整可用字幕，视频时长合计 2 小时 28 分 34 秒；目录仍为 63 条，不是全部历史作品。另读 1 篇作者专栏；配乐/剪辑片段不计为理念教学。没有逐帧观看、逐字听校；作者清单代码已核原文，未在客户端导入验证。",
       "color": "blue",
       "evolution": [
         {
@@ -192,7 +192,8 @@ window.AIM_DATA={
       "category": "tracking",
       "details": [
         "他区分持续跟随与位置纠错：如果只有发现落后后猛拉一下的习惯，操作就容易变成一段段追赶。训练可以从左右、上下、直线、弧线、自由落体等较简单的运动模式开始，再组合为复杂跟枪、动态点击和转火。",
-        "长篇案例中的做法更具体：把目标速度调慢，先能感受并控制完整行程，再逐步加速；跟上目标速度后，用微调消除剩余位置差。目标太快时可尝试在其运动路径上截住，再继续跟随。预测与持续观察并存，不能只预测一次就不再更新判断。"
+        "长篇案例中的做法更具体：把目标速度调慢，先能感受并控制完整行程，再逐步加速；跟上目标速度后，用微调消除剩余位置差。目标太快时可尝试在其运动路径上截住，再继续跟随。预测与持续观察并存，不能只预测一次就不再更新判断。",
+        "CS 架枪可以在预读路线后截取，也可以接一小段跟随。作者明确把短跟随视为可组合能力，而非必须消除的坏习惯。"
       ],
       "sourceRefs": [
         {
@@ -212,6 +213,12 @@ window.AIM_DATA={
           "bvid": "BV1xweq6KEQM",
           "time": 1654,
           "label": "速度匹配与截取 27:34–30:58"
+        },
+        {
+          "bvid": "BV16mYB68E3j",
+          "time": 2493,
+          "label": "截取、架枪与短跟随",
+          "url": "https://www.bilibili.com/video/BV16mYB68E3j/?t=2493"
         }
       ],
       "kind": "principle"
@@ -310,7 +317,8 @@ window.AIM_DATA={
       "category": "practice",
       "details": [
         "训练软件的用途是把能力拆开、减小干扰、便于观察和重复。高段位玩家也可能缺少某种持续移动能力，六目标低分也不自动意味着实战定位不够用。已有长处可以保留，把缺少的能力补回来。",
-        "长篇教学常用“观察实战 → 用简单项目检验 → 降速建立动作 → 回到复杂项目或游戏”的顺序。训练时可以刻意关注某个动作，实战中不必每一枪都想着肩腕怎么动。热身与技能训练目标不同，即使暂时使用同一个项目，也不能混为一谈。"
+        "长篇教学常用“观察实战 → 用简单项目检验 → 降速建立动作 → 回到复杂项目或游戏”的顺序。训练时可以刻意关注某个动作，实战中不必每一枪都想着肩腕怎么动。热身与技能训练目标不同，即使暂时使用同一个项目，也不能混为一谈。",
+        "新增 CS 个案：已有定位基础时，先查实战缺口，再用不同转火与持续跟随组合能力；不把整套枪法回炉，也不按“CS 专用”标签代替选图判断。"
       ],
       "sourceRefs": [
         {
@@ -330,6 +338,12 @@ window.AIM_DATA={
           "bvid": "BV1QsYB6LEA1",
           "time": 1835,
           "label": "热身和训练 30:35–30:54"
+        },
+        {
+          "bvid": "BV16mYB68E3j",
+          "time": 464,
+          "label": "CS 学员：组合已有能力",
+          "url": "https://www.bilibili.com/video/BV16mYB68E3j/?t=464"
         }
       ],
       "kind": "principle"
@@ -447,7 +461,8 @@ window.AIM_DATA={
       "details": [
         "避免猛甩后用力压住鼠标来硬刹，或用无意义抖动代替减速。",
         "有把握时可在减速微调中点击，不必先停死再等一次。",
-        "先用短距离做好控制，再逐步扩大距离与速度。"
+        "先用短距离做好控制，再逐步扩大距离与速度。",
+        "完整静态指南补充：确认不要求每次都看清准星与目标完全重合；感觉与点击反馈也参与形成可命中的把握。不能把确认理解为停死后再等一次。"
       ],
       "category": "static",
       "sourceRefs": [
@@ -468,6 +483,12 @@ window.AIM_DATA={
           "time": 265,
           "label": "稳定后再启动",
           "url": "https://www.bilibili.com/video/BV1CH4y1c7Yo/?t=265"
+        },
+        {
+          "bvid": "BV1Xt421L72J",
+          "time": 86,
+          "label": "确认与感觉反馈",
+          "url": "https://www.bilibili.com/video/BV1Xt421L72J/?t=86"
         }
       ],
       "caveats": [
@@ -597,7 +618,8 @@ window.AIM_DATA={
       "details": [
         "单发武器和步枪、宽松窗口和紧迫对枪，确认程度可以不同。",
         "在游戏内练枪械控制和移动，并用录像检查真正限制击杀的环节。",
-        "后期强调实战允许不完美，及时修正比等待永远不会出现的完美确认更有用。"
+        "后期强调实战允许不完美，及时修正比等待永远不会出现的完美确认更有用。",
+        "游戏内可用自定义地图与朋友核对头线、架枪距离，再做点位一对一；这让瞄准与移动、出人和开火重新结合。"
       ],
       "category": "practice",
       "sourceRefs": [
@@ -618,6 +640,12 @@ window.AIM_DATA={
           "time": 732,
           "label": "不确定性中的修正",
           "url": "https://www.bilibili.com/video/BV1CAzBBGExF/?t=732"
+        },
+        {
+          "bvid": "BV1BK4y1c7R4",
+          "time": 293,
+          "label": "地图与点位对练",
+          "url": "https://www.bilibili.com/video/BV1BK4y1c7R4/?t=293"
         }
       ],
       "caveats": [
@@ -636,7 +664,8 @@ window.AIM_DATA={
       "details": [
         "先找弱项，再选择对应练习；不把整套清单当作自动进步程序。",
         "可以交叉练不同变体，也可集中练一个问题；用途不同。",
-        "用完成轮次、时间或表现作为换项目条件，避免无限重开和透支热情。"
+        "用完成轮次、时间或表现作为换项目条件，避免无限重开和透支热情。",
+        "先用表现暴露问题，再录像复盘、选择针对性练习，最后回到原场景检验。作者的长时冲分安排属于个人目标，不直接套给只在实战失常的玩家。"
       ],
       "category": "practice",
       "sourceRefs": [
@@ -657,6 +686,12 @@ window.AIM_DATA={
           "time": 214,
           "label": "完成整轮练习",
           "url": "https://www.bilibili.com/video/BV1oN4y1C7sx/?t=214"
+        },
+        {
+          "bvid": "BV1rb4y1K7zA",
+          "time": 130,
+          "label": "表现、复盘、专项与检验",
+          "url": "https://www.bilibili.com/video/BV1rb4y1K7zA/?t=130"
         }
       ],
       "caveats": [
@@ -675,7 +710,8 @@ window.AIM_DATA={
       "details": [
         "没有统一毕业分数或固定小时数；比较应服务诊断，而非自我否定。",
         "对想法做小实验，以录像和命中反馈修正，少陷入正确步骤的空想。",
-        "保留兴趣和休息，也接受努力未必达成某个特定目标。"
+        "保留兴趣和休息，也接受努力未必达成某个特定目标。",
+        "新增实战进阶课：复盘清单不应变成比赛中的多条动作命令。作者以自己的经历建议一天围绕一个问题练习；不能据此断言所有关键局失误都来自过度思考。"
       ],
       "category": "mindset",
       "sourceRefs": [
@@ -696,6 +732,12 @@ window.AIM_DATA={
           "time": 438,
           "label": "耐心与乐趣",
           "url": "https://www.bilibili.com/video/BV1kz4y1L7PL/?t=438"
+        },
+        {
+          "bvid": "BV1p64y1K7Mg",
+          "time": 120,
+          "label": "把多指令改成一个问题",
+          "url": "https://www.bilibili.com/video/BV1p64y1K7Mg/?t=120"
         }
       ],
       "caveats": [
@@ -1927,6 +1969,271 @@ window.AIM_DATA={
         "vision",
         "practice"
       ]
+    },
+    {
+      "id": "BV16mYB68E3j",
+      "bvid": "BV16mYB68E3j",
+      "author": "keli",
+      "kind": "source",
+      "title": "带枪法基础不错的GO学长练枪",
+      "url": "https://www.bilibili.com/video/BV16mYB68E3j/",
+      "duration": 2725,
+      "summary": "针对已有较好定位基础的 CS 玩家，先观察游戏与已有练习，再用转火、持续跟随和动态点击补充能力，最后回游戏核对。作者区分爆发移动后停稳与持续稳定移动，讨论架枪时读取路线、截取与短跟随的组合；已有能力不必回炉，训练量和分数属于该个案。",
+      "claims": [
+        {
+          "text": "加入强调跟枪和强调定位的转火，将已分开的技巧交替组合起来。",
+          "start": 464,
+          "end": 548,
+          "qualification": "针对该学员原有内容偏静态的安排。"
+        },
+        {
+          "text": "只练移到后停稳，可能遗漏应对移动敌人的持续跟随能力；CS 架枪也需要处理出点运动。",
+          "start": 645,
+          "end": 747,
+          "qualification": "作者经验与个案解释，不等于所有 CS 玩家都缺跟枪。"
+        },
+        {
+          "text": "按项目能补什么能力来选练习，而不是只按 CS、瓦、APEX 的游戏标签划分。",
+          "start": 1067,
+          "end": 1132,
+          "qualification": "作者训练理念。"
+        },
+        {
+          "text": "灵敏度要回游戏看微调、压枪、转身后的实际适配，不只凭训练软件的纯瞄准手感。",
+          "start": 1643,
+          "end": 1690,
+          "qualification": "该学员当时并无明显不适配，不能当作统一改敏指令。"
+        },
+        {
+          "text": "动态点击可以先定位到运动路径前方截取，避免一直追尾；截取后短跟随也可成为组合能力。",
+          "start": 2493,
+          "end": 2643,
+          "qualification": "练习中的专项打法，不是对所有 CS 架枪场景统一使用的策略。"
+        },
+        {
+          "text": "基础项目仍为重点，后两项动态点击只需短时练习，不要上头增加大量练习。",
+          "start": 2667,
+          "end": 2688,
+          "qualification": "字幕提及约三分钟，但两项合计还是分别不明确，未写成精确统一计划。"
+        }
+      ],
+      "categories": [
+        "practice",
+        "tracking",
+        "static",
+        "equipment"
+      ],
+      "readStatus": "完整字幕已读"
+    },
+    {
+      "id": "BV1Xt421L72J",
+      "bvid": "BV1Xt421L72J",
+      "author": "cirno",
+      "kind": "source",
+      "title": "《静态定位完全攻略指南》",
+      "url": "https://www.bilibili.com/video/BV1Xt421L72J/",
+      "duration": 543,
+      "summary": "静态定位完整指南：确认可以依靠感觉与反馈；根据动作、确认、切换、节奏的具体问题选练习。",
+      "claims": [
+        {
+          "text": "确认可以依靠熟练感觉和反馈，不要求每次看清准星重合；一次定位须保留后续修正。",
+          "start": 46,
+          "end": 120,
+          "qualification": "静态训练语境，不把有把握改成无限等待。"
+        },
+        {
+          "text": "根据目标大小、数量、距离与变体选择练习，并先诊断问题。",
+          "start": 330,
+          "end": 423,
+          "qualification": "清单代码在配套专栏可核对，当前客户端可用性未测试。"
+        },
+        {
+          "text": "相邻目标、总点击数、动作质量等瓶颈需要分别处理。",
+          "start": 423,
+          "end": 530,
+          "qualification": "94%等示例不是CS实战阈值。"
+        }
+      ],
+      "categories": [
+        "practice",
+        "mindset",
+        "static"
+      ],
+      "readStatus": "完整字幕已读"
+    },
+    {
+      "id": "BV1MH4y1C7JA",
+      "bvid": "BV1MH4y1C7JA",
+      "author": "cirno",
+      "kind": "source",
+      "title": "【琪露诺的瞄准课堂#实战进阶篇1】在实战中如何发挥与提升瞄准能力?",
+      "url": "https://www.bilibili.com/video/BV1MH4y1C7JA/",
+      "duration": 333,
+      "summary": "实战要给瞄准创造条件：移动模式、枪械、掩体、团队与地图都影响发挥，练枪是辅助之一。",
+      "claims": [
+        {
+          "text": "实战先通过站位、枪械和信息等条件创造瞄准机会。",
+          "start": 42,
+          "end": 99,
+          "qualification": "原片以Apex为例，CS应用须区分机制。"
+        },
+        {
+          "text": "游戏内熟悉移动目标、有效距离与武器，训练软件是辅助。",
+          "start": 99,
+          "end": 182,
+          "qualification": "不代表所有玩家都必须增加练枪软件时间。"
+        },
+        {
+          "text": "周期复盘，按实际短板决定练习。",
+          "start": 244,
+          "end": 289,
+          "qualification": "不是从输掉对枪直接推出纯瞄准不足。"
+        }
+      ],
+      "categories": [
+        "practice",
+        "mindset",
+        "static"
+      ],
+      "readStatus": "完整字幕已读"
+    },
+    {
+      "id": "BV1p64y1K7Mg",
+      "bvid": "BV1p64y1K7Mg",
+      "author": "cirno",
+      "kind": "source",
+      "title": "【琪露诺的瞄准课堂#实战进阶篇2】打好游戏脑子里要安杀毒软件？刻意不犯错在扼杀你的天赋!",
+      "url": "https://www.bilibili.com/video/BV1p64y1K7Mg/",
+      "duration": 240,
+      "summary": "作者复盘自己过度监控错误、指令过多的状态，转向每次只解决一个具体问题并关注当前行动。",
+      "claims": [
+        {
+          "text": "作者同时监控诸多错误时感到指令冲突，后来改成一天解决一个问题。",
+          "start": 120,
+          "end": 169,
+          "qualification": "作者的Apex个人经历，非用户病因诊断。"
+        },
+        {
+          "text": "关注当前具体任务，复盘为游戏服务，不把不犯错当成全部目的。",
+          "start": 178,
+          "end": 228,
+          "qualification": "不是不复盘，也不是取消战术判断。"
+        }
+      ],
+      "categories": [
+        "practice",
+        "mindset",
+        "static"
+      ],
+      "readStatus": "完整字幕已读"
+    },
+    {
+      "id": "BV1rb4y1K7zA",
+      "bvid": "BV1rb4y1K7zA",
+      "author": "cirno",
+      "kind": "source",
+      "title": "【琪露诺的瞄准课堂#进阶篇4】 如何高效训练瞄准能力达成目标?",
+      "url": "https://www.bilibili.com/video/BV1rb4y1K7zA/",
+      "duration": 352,
+      "summary": "区分暴露问题、复盘、针对练习和再次检验；短期纠错与长期能力培养不是同一任务。",
+      "claims": [
+        {
+          "text": "通过表现暴露问题、录像复盘和针对练习形成循环。",
+          "start": 130,
+          "end": 177,
+          "qualification": "字幕“充分”依语境应理解为冲分/检验表现。"
+        },
+        {
+          "text": "短期纠错与长期能力培养的任务不同，应分别安排。",
+          "start": 177,
+          "end": 220,
+          "qualification": "88%与95%是静态示例。"
+        },
+        {
+          "text": "作者给出规律训练与冲分阶段的不同时间方案，同时要求休息。",
+          "start": 221,
+          "end": 277,
+          "qualification": "不是为本用户制定；本次不推荐照抄3小时冲分量。"
+        }
+      ],
+      "categories": [
+        "practice",
+        "mindset",
+        "static"
+      ],
+      "readStatus": "完整字幕已读"
+    },
+    {
+      "id": "BV11EChYVEyD",
+      "bvid": "BV11EChYVEyD",
+      "author": "cirno",
+      "kind": "source",
+      "title": "【琪露诺的瞄准课堂】为什么需要调配专注的剂量？",
+      "url": "https://www.bilibili.com/video/BV11EChYVEyD/",
+      "duration": 352,
+      "summary": "专注应随任务与精力切换，过度持续专注可能挤占战术信息并导致透支。",
+      "claims": [
+        {
+          "text": "高强度练枪后的精力消耗可能影响接下来的游戏，应按状态调整投入。",
+          "start": 73,
+          "end": 111,
+          "qualification": "个人经验模型。"
+        },
+        {
+          "text": "写下专注耗在哪里，找到当前真正需要处理的事情。",
+          "start": 229,
+          "end": 269,
+          "qualification": "不是要求交火时持续自我监控。"
+        },
+        {
+          "text": "只关注瞄准会忽视站位与信息，专注要随游戏环节切换。",
+          "start": 270,
+          "end": 330,
+          "qualification": "不把所有失误都归为注意力。"
+        }
+      ],
+      "categories": [
+        "practice",
+        "mindset",
+        "static"
+      ],
+      "readStatus": "完整字幕已读"
+    },
+    {
+      "id": "BV1BK4y1c7R4",
+      "bvid": "BV1BK4y1c7R4",
+      "author": "cirno",
+      "kind": "source",
+      "title": "实战对枪，需要摆正的不仅是你的预瞄[琪露诺的瞄准课堂实战篇EP1]",
+      "url": "https://www.bilibili.com/video/BV1BK4y1c7R4/",
+      "duration": 382,
+      "summary": "预瞄结合身位与信息；担忧死亡得失可能干扰对枪，提供自定义地图和朋友一对一练习方式。",
+      "claims": [
+        {
+          "text": "预瞄需要结合身位和敌人可能出现的方式，偏差再交给定位修正。",
+          "start": 60,
+          "end": 158,
+          "qualification": "原始案例为战术FPS，具体角度需看画面。"
+        },
+        {
+          "text": "担忧死亡和队伍损失可能干扰对枪，应在该执行时减少得失纠缠。",
+          "start": 214,
+          "end": 288,
+          "qualification": "关闭大脑是口语表达，不是无脑对枪。"
+        },
+        {
+          "text": "可以用自定义地图与朋友检查头线、架枪距离，再做点位一对一。",
+          "start": 293,
+          "end": 323,
+          "qualification": "未给统一地图名、轮数或时长。"
+        }
+      ],
+      "categories": [
+        "practice",
+        "mindset",
+        "static"
+      ],
+      "readStatus": "完整字幕已读"
     }
   ]
 };
