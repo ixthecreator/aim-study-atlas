@@ -27,7 +27,7 @@
   function setView(view){
     state.view=view;
     ['map','library','compare'].forEach(v=>$('#'+v+'-view').hidden=v!==view);
-    document.querySelectorAll('[data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===view);b.setAttribute('aria-pressed',String(b.dataset.view===view));});
+    document.querySelectorAll('[data-view]').forEach(b=>{if(b.hasAttribute('data-jump'))return;b.classList.toggle('active',b.dataset.view===view);b.setAttribute('aria-pressed',String(b.dataset.view===view));});
     renderAuthors();
     if(view==='library')renderLibrary();
     if(view==='compare')renderCompare();
@@ -97,7 +97,7 @@
   }
   document.addEventListener('click',e=>{
     const b=e.target.closest('button');if(!b)return;
-    if(b.dataset.view)setView(b.dataset.view);
+    if(b.dataset.view){setView(b.dataset.view);if(b.hasAttribute('data-jump')||b.closest('.topbar'))$('#study').scrollIntoView({block:'start'});}
     if(b.dataset.author){state.author=b.dataset.author;state.category='all';state.page=1;state.selected=currentPrinciples()[0].id;renderAuthors();if(state.view==='map'){renderMap();fitMap();}else if(state.view==='library')renderLibrary();}
     if(b.dataset.node){state.selected=b.dataset.node;renderMap();applyZoom();const node=document.querySelector(`[data-node="${state.selected}"]`);node?.focus({preventScroll:true});}
     if(b.dataset.open)openReader(b.dataset.open);
